@@ -4,276 +4,636 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Naveena K | Portfolio</title>
-
+    
+    <!-- Custom Style Sheet -->
     <link rel="stylesheet" href="style.css">
 
     <!-- Box Icons -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 
-    <!-- Google Font -->
+    <!-- Google Fonts: Outfit & JetBrains Mono -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<!-- Header -->
-<header>
-    <a href="#" class="logo">PORTFOLIO</a>
+    <!-- Glowing Background blobs for premium glassmorphic depth -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
 
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#education">Education</a>
-        <a href="#contact">Contact</a>
-    </nav>
-</header>
-
-<!-- Home -->
-<section id="home" class="home">
-    <div class="home-content">
-        <h3>Hello, I'm</h3>
-        <h1>Naveena K</h1>
-        <h2>Aspiring Software Developer</h2>
-
-        <p>
-            Passionate about building responsive and user-friendly web applications.
-            I enjoy solving problems and creating modern digital experiences.
-        </p>
-
-        <div class="btn-box">
-            <a href="files/NaveenaK_Resume.pdf" target="_blank">Download Resume</a>
-            <a href="#projects">View Projects</a>
+    <!-- Header / Navigation -->
+    <header>
+        <div class="logo-area">
+            <span class="logo-symbol"></span>
+            <a href="#" class="logo">PORTFOLIO</a>
         </div>
 
-       
-    </div>
-</section>
-
-<!-- About -->
-<section id="about" class="about">
-
-    <h2 class="heading">About Me</h2>
-
-    <div class="about-content">
-        <p>
-            I am a B.Sc Information Technology graduate with a passion for web development
-            and software engineering. I enjoy transforming ideas into functional and visually
-            appealing applications.
-
-            During my internship at Syncfusion Software Pvt. Ltd., I gained practical experience
-            in UI development, testing, and digital marketing.
-        </p>
-    </div>
-
-</section>
-
-<!-- Skills -->
-<section id="skills">
-
-    <h2 class="heading">Skills</h2>
-
-    <div class="skill-container">
-
-        <div class="skill-box">
-            <i class='bx bxl-html5'></i>
-            <h3>HTML5</h3>
+        <!-- Mobile Menu Toggle -->
+        <div class="menu-toggle" id="mobile-menu-btn">
+            <i class="bx bx-menu"></i>
         </div>
 
-        <div class="skill-box">
-            <i class='bx bxl-css3'></i>
-            <h3>CSS3</h3>
-        </div>
+        <nav id="nav-menu">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-        <div class="skill-box">
-            <i class='bx bxl-javascript'></i>
-            <h3>JavaScript</h3>
-        </div>
+    <!-- Main Container -->
+    <main>
 
+        <!-- Home / Hero Section -->
+        <section id="home" class="home section-container">
+            <div class="hero-text-side">
+                <div class="badge-row">
+                    <span class="status-badge"><span class="pulse-dot"></span> Available for Work</span>
+                </div>
+                
+                <div class="terminal-greeting">
+                    <i class="bx bx-sparkles greet-icon"></i>
+                    <span>greeting.exe</span>
+                </div>
 
-        <div class="skill-box">
-            <i class='bx bxl-java'></i>
-            <h3>Java</h3>
-        </div>
+                <h1 class="hero-name-heading">
+                    Hello, I'm <br>
+                    <span class="gradient-text">Naveena K</span>
+                </h1>
 
-        <div class="skill-box">
-            <i class='bx bx-data'></i>
-            <h3>MySQL</h3>
-        </div>
+                <h2 class="hero-subtitle">
+                    I turn ideas into <span id="typewriter-text" class="typewriter-cursor">interactive reality.</span>
+                </h2>
 
-        <div class="skill-box">
-            <i class='bx bxl-git'></i>
-            <h3>Git</h3>
-        </div>
+                <p class="hero-description">
+                    Passionate about building responsive and user-friendly web applications. 
+                    I enjoy solving complex problems and creating modern digital experiences that live on the web.
+                </p>
 
-        <div class="skill-box">
-            <i class='bx bxl-github'></i>
-            <h3>GitHub</h3>
-        </div>
+                <div class="hero-stats">
+                    <span class="stat-item"><i class="bx bx-check-circle"></i> 4+ Projects completed</span>
+                    <span class="stat-divider">|</span>
+                    <span class="stat-item"><i class="bx bx-code-alt"></i> Always learning</span>
+                </div>
 
-    </div>
-
-</section>
-
-<!-- Experience -->
-<section id="experience">
-
-    <h2 class="heading">Experience</h2>
-
-    <div class="experience-box">
-
-        <h3>Syncfusion Software Pvt. Ltd.</h3>
-
-        <h4>UI Development Intern</h4>
-
-        <ul>
-            <li>Built UI components using HTML and CSS.</li>
-            <li>Performed manual testing and bug reporting.</li>
-            <li>Assisted in digital marketing activities.</li>
-        </ul>
-
-    </div>
-
-</section>
-
-<!-- Projects -->
-<section id="projects">
-
-    <h2 class="heading">Projects</h2>
-
-    <div class="project-container">
-
-        
-
-
-        <div class="project-box">
-
-            <h3>Dream Planet</h3>
-
-            <p>
-                Designed and developed a responsive website with modern layouts,
-                animations and interactive features.
-            </p>
-
-            <span>HTML5 | CSS3 | JavaScript</span>
-
-            <div class="project-btn">
-                <a href="https://github.com/Naveena-460/Planet" target="_blank">GitHub</a>
-                <a href="https://naveena-460.github.io/Planet/zyra/home.html" target="_blank">Live Demo</a>
+                <div class="hero-cta-btn-box">
+                    <a href="#contact" class="btn btn-primary">Let's Connect <i class="bx bx-send"></i></a>
+                    <a href="files/NaveenaK_Resume.pdf" download class="btn btn-secondary">Download Resume <i class="bx bx-download"></i></a>
+                </div>
             </div>
 
-        </div>
+            <div class="hero-visual-side">
+                <!-- OS IDE Style Window Container -->
+                <div class="window-container portfolio-window">
+                    <div class="window-header">
+                        <div class="window-controls">
+                            <span class="control-dot close"></span>
+                            <span class="control-dot minimize"></span>
+                            <span class="control-dot expand"></span>
+                        </div>
+                        <div class="window-title">portfolio.exe</div>
+                        <div class="window-actions">
+                            <i class="bx bx-cog"></i>
+                        </div>
+                    </div>
+                    <div class="window-body">
+                        <!-- Profile Image Avatar -->
+                        <div class="profile-pic-container">
+                            <div class="profile-glow-ring">
+                                <img src="assets/Gemini_Generated_Image_txtwobtxtwobtxtw.png" alt="Naveena K" class="profile-avatar-img">
+                            </div>
+                            <span class="avatar-status-dot"></span>
+                        </div>
 
+                        <!-- Code Editor Highlight -->
+                        <div class="code-editor-block">
+                            <pre><code class="language-js"><span class="code-keyword">const</span> <span class="code-variable">developer</span> = {
+    name: <span class="code-string">'Naveena K'</span>,
+    role: <span class="code-string">'Aspiring Software Developer'</span>,
+    stack: [<span class="code-string">'Java'</span>, <span class="code-string">'JavaScript'</span>, <span class="code-string">'MySQL'</span>, <span class="code-string">'HTML/CSS'</span>],
+    location: <span class="code-string">'Chennai, India'</span>
+};</code></pre>
+                        </div>
 
-        <div class="project-box">
+                        <!-- Skill Tags Overlay -->
+                        <div class="visual-skill-tags">
+                            <span class="skill-tag">HTML5</span>
+                            <span class="skill-tag">CSS3</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">Git</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-            <h3>Subscription Tracking System</h3>
+        <!-- About Section -->
+        <section id="about" class="about section-container">
+            <h2 class="section-title">About <span class="gradient-text">Myself</span></h2>
+            <p class="section-subtitle">Passionate developer dedicated to crafting exceptional digital experiences</p>
 
-            <p>
-                Built a modern application to manage subscriptions efficiently
-                using React and JavaScript.
-            </p>
+            <div class="window-container profile-dev-window">
+                <div class="window-header">
+                    <div class="window-controls">
+                        <span class="control-dot close"></span>
+                        <span class="control-dot minimize"></span>
+                        <span class="control-dot expand"></span>
+                    </div>
+                    <div class="window-title">profile.dev</div>
+                </div>
+                <div class="window-body about-window-body">
+                    <div class="about-header-meta">
+                        <div class="about-meta-avatar">
+                            <i class="bx bx-user-circle"></i>
+                        </div>
+                        <div class="about-meta-details">
+                            <h3>Naveena K</h3>
+                            <p>Aspiring Software Developer &bull; <span class="active-text">Available</span></p>
+                        </div>
+                    </div>
+                    
+                    <div class="about-paragraph-content">
+                        <p>
+                            I am a <strong>B.Sc Information Technology</strong> graduate with a core passion for web development and software engineering. I love transforming abstract ideas and designs into functional, clean, and visually stunning web applications.
+                        </p>
+                        <p>
+                            During my internship at <strong>Syncfusion Software Pvt. Ltd.</strong>, I gained hands-on corporate experience in building robust UI components, manual testing, bug resolution workflows, and digital marketing strategies. This helped me bridge the gap between theoretical computing and professional software practices.
+                        </p>
+                    </div>
 
-            <span>React | JavaScript</span>
+                    <!-- Personal Attributes Tags -->
+                    <div class="attributes-tags">
+                        <span class="attr-chip"><i class="bx bx-check"></i> Problem Solver</span>
+                        <span class="attr-chip"><i class="bx bx-group"></i> Team Player</span>
+                        <span class="attr-chip"><i class="bx bx-bolt"></i> Quick Learner</span>
+                        <span class="attr-chip"><i class="bx bx-search-alt"></i> Detail Oriented</span>
+                        <span class="attr-chip"><i class="bx bx-paint"></i> UI Enthusiast</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-            <div class="project-btn">
-                <a href="https://github.com/Naveena-460/TRACKING_SYSTEM" target="_blank">GitHub</a>
-                <a href="https://tracking-system-blond.vercel.app/" target="_blank">Live Demo</a>
+        <!-- Skills Section -->
+        <section id="skills" class="skills section-container">
+            <h2 class="section-title">Tech <span class="gradient-text">Stack</span></h2>
+            <p class="section-subtitle">Tools and technologies I work with to build amazing applications</p>
+
+            <div class="skills-grid">
+                <!-- Frontend Window -->
+                <div class="window-container skill-card-window">
+                    <div class="window-header">
+                        <div class="window-controls">
+                            <span class="control-dot close"></span>
+                            <span class="control-dot minimize"></span>
+                            <span class="control-dot expand"></span>
+                        </div>
+                        <div class="window-title">frontend.dev</div>
+                    </div>
+                    <div class="window-body tech-list-body">
+                        <div class="tech-category-title">
+                            <i class="bx bx-layout category-icon"></i>
+                            <span>Frontend Development</span>
+                        </div>
+                        <ul class="tech-item-list">
+                            <li><span class="bullet html-bullet"></span> <i class="bx bxl-html5"></i> HTML5</li>
+                            <li><span class="bullet css-bullet"></span> <i class="bx bxl-css3"></i> CSS3</li>
+                            <li><span class="bullet js-bullet"></span> <i class="bx bxl-javascript"></i> JavaScript</li>
+                            <li><span class="bullet bootstrap-bullet"></span> <i class="bx bxl-bootstrap"></i> Bootstrap</li>
+                            <li><span class="bullet react-bullet"></span> <i class="bx bxl-react"></i> React.js (Interests)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Languages Window -->
+                <div class="window-container skill-card-window">
+                    <div class="window-header">
+                        <div class="window-controls">
+                            <span class="control-dot close"></span>
+                            <span class="control-dot minimize"></span>
+                            <span class="control-dot expand"></span>
+                        </div>
+                        <div class="window-title">languages.dev</div>
+                    </div>
+                    <div class="window-body tech-list-body">
+                        <div class="tech-category-title">
+                            <i class="bx bx-code category-icon"></i>
+                            <span>Core Languages</span>
+                        </div>
+                        <ul class="tech-item-list">
+                            <li><span class="bullet java-bullet"></span> <i class="bx bxl-java"></i> Java</li>
+                            <li><span class="bullet php-bullet"></span> <i class="bx bxl-php"></i> PHP</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Database Window -->
+                <div class="window-container skill-card-window">
+                    <div class="window-header">
+                        <div class="window-controls">
+                            <span class="control-dot close"></span>
+                            <span class="control-dot minimize"></span>
+                            <span class="control-dot expand"></span>
+                        </div>
+                        <div class="window-title">database.dev</div>
+                    </div>
+                    <div class="window-body tech-list-body">
+                        <div class="tech-category-title">
+                            <i class="bx bx-data category-icon"></i>
+                            <span>Databases</span>
+                        </div>
+                        <ul class="tech-item-list">
+                            <li><span class="bullet db-bullet"></span> <i class="bx bx-data"></i> MySQL</li>
+                            <li><span class="bullet sql-bullet"></span> <i class="bx bx-server"></i> SQL</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Tools Window -->
+                <div class="window-container skill-card-window">
+                    <div class="window-header">
+                        <div class="window-controls">
+                            <span class="control-dot close"></span>
+                            <span class="control-dot minimize"></span>
+                            <span class="control-dot expand"></span>
+                        </div>
+                        <div class="window-title">tools.dev</div>
+                    </div>
+                    <div class="window-body tech-list-body">
+                        <div class="tech-category-title">
+                            <i class="bx bx-wrench category-icon"></i>
+                            <span>Developer Tools</span>
+                        </div>
+                        <ul class="tech-item-list">
+                            <li><span class="bullet git-bullet"></span> <i class="bx bxl-git"></i> Git</li>
+                            <li><span class="bullet github-bullet"></span> <i class="bx bxl-github"></i> GitHub</li>
+                            <li><span class="bullet vscode-bullet"></span> <i class="bx bx-terminal"></i> VS Code</li>
+                            <li><span class="bullet xampp-bullet"></span> <i class="bx bx-server"></i> XAMPP</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience section-container">
+            <h2 class="section-title">Work <span class="gradient-text">Experience</span></h2>
+            <p class="section-subtitle">My professional journey in the technology sector</p>
+
+            <div class="window-container experience-window">
+                <div class="window-header">
+                    <div class="window-controls">
+                        <span class="control-dot close"></span>
+                        <span class="control-dot minimize"></span>
+                        <span class="control-dot expand"></span>
+                    </div>
+                    <div class="window-title">experience.dev</div>
+                </div>
+                <div class="window-body experience-window-body">
+                    <div class="experience-company-header">
+                        <div class="company-logo-stub">SF</div>
+                        <div class="company-text-meta">
+                            <h3>Syncfusion Software Pvt. Ltd.</h3>
+                            <span class="role-text-badge">UI Development Intern</span>
+                        </div>
+                    </div>
+
+                    <div class="experience-timeline-details">
+                        <p class="internship-time-marker"><i class="bx bx-calendar"></i> Internship Term</p>
+                        
+                        <ul class="experience-task-list">
+                            <li>
+                                <div class="task-bullet-icon"><i class="bx bx-code-curly"></i></div>
+                                <div class="task-description">
+                                    <strong>UI Component Construction:</strong> Designed and developed modular frontend interface modules and layouts using semantic HTML5 and responsive CSS3 specifications.
+                                </div>
+                            </li>
+                            <li>
+                                <div class="task-bullet-icon"><i class="bx bx-bug"></i></div>
+                                <div class="task-description">
+                                    <strong>Quality Assurance & Testing:</strong> Conducted thorough manual black-box testing runs on web portals, identified visual/functional bugs, and filed structured issue reports for developer actions.
+                                </div>
+                            </li>
+                            <li>
+                                <div class="task-bullet-icon"><i class="bx bx-line-chart"></i></div>
+                                <div class="task-description">
+                                    <strong>Digital Operations support:</strong> Contributed research and analytical layouts to assist with ongoing digital SEO and software promotion campaigns.
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section-container">
+            <h2 class="section-title">Projects <span class="gradient-text">Showcase</span></h2>
+            <p class="section-subtitle">Demonstrated works built with modern technologies</p>
+
+            <!-- Project Filters -->
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="frontend">Front-End</button>
+                <button class="filter-btn" data-filter="fullstack">Full-Stack / DB</button>
             </div>
 
-        </div>
+            <!-- Projects Grid -->
+            <div class="projects-grid">
+                
+                <!-- Project 1: Dream Planet -->
+                <div class="window-container project-card-window" data-category="frontend">
+                    <div class="window-header">
+                        <div class="window-controls">
+                            <span class="control-dot close"></span>
+                            <span class="control-dot minimize"></span>
+                            <span class="control-dot expand"></span>
+                        </div>
+                        <div class="window-title">dream-planet.exe</div>
+                    </div>
+                    <div class="window-body project-card-body" onclick="openProjectModal('planet')">
+                        <div class="project-img-wrapper">
+                            <img src="assets/cover_planet.png" alt="Dream Planet Project cover" class="project-cover-img">
+                            <div class="project-hover-overlay">
+                                <span class="explore-btn"><i class="bx bx-search-alt-2"></i> Explore Project</span>
+                            </div>
+                        </div>
+                        <div class="project-meta-info">
+                            <h3>Dream Planet Space Website</h3>
+                            <p class="project-excerpt">Designed and developed a responsive astronomical website with modern dark layouts, fluid scroll effects, and celestial visuals.</p>
+                            <div class="project-tech-chips">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-        <div class="project-box">
-            <h3>Decor Dreamz - Furniture Website</h3>
+                <!-- Project 2: Subscription Tracker -->
+                <div class="window-container project-card-window" data-category="frontend">
+                    <div class="window-header">
+                        <div class="window-controls">
+                            <span class="control-dot close"></span>
+                            <span class="control-dot minimize"></span>
+                            <span class="control-dot expand"></span>
+                        </div>
+                        <div class="window-title">subscription-tracker.exe</div>
+                    </div>
+                    <div class="window-body project-card-body" onclick="openProjectModal('tracker')">
+                        <div class="project-img-wrapper">
+                            <img src="assets/cover_tracker.png" alt="Subscription Tracker Project cover" class="project-cover-img">
+                            <div class="project-hover-overlay">
+                                <span class="explore-btn"><i class="bx bx-search-alt-2"></i> Explore Project</span>
+                            </div>
+                        </div>
+                        <div class="project-meta-info">
+                            <h3>Subscription Tracking System</h3>
+                            <p class="project-excerpt">Built a modern reactive dashboard to track dynamic memberships, renewal payments, and expenses with responsive states.</p>
+                            <div class="project-tech-chips">
+                                <span>React</span>
+                                <span>JavaScript</span>
+                                <span>HTML5/CSS3</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-            <p>
-            Designed and developed a responsive furniture website with modern UI, product showcase, and interactive features using HTML5, CSS3, and JavaScript.
-            </p>
+                <!-- Project 3: Decor Dreamz -->
+                <div class="window-container project-card-window" data-category="frontend">
+                    <div class="window-header">
+                        <div class="window-controls">
+                            <span class="control-dot close"></span>
+                            <span class="control-dot minimize"></span>
+                            <span class="control-dot expand"></span>
+                        </div>
+                        <div class="window-title">decor-dreamz.exe</div>
+                    </div>
+                    <div class="window-body project-card-body" onclick="openProjectModal('decor')">
+                        <div class="project-img-wrapper">
+                            <img src="assets/cover_furniture.png" alt="Decor Dreamz cover" class="project-cover-img">
+                            <div class="project-hover-overlay">
+                                <span class="explore-btn"><i class="bx bx-search-alt-2"></i> Explore Project</span>
+                            </div>
+                        </div>
+                        <div class="project-meta-info">
+                            <h3>Decor Dreamz Furniture Web</h3>
+                            <p class="project-excerpt">Designed and developed a premium, clean responsive furniture storefront showcasing layouts, product categories, and dynamic UI details.</p>
+                            <div class="project-tech-chips">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-            <span>| HTML5 | CSS3 | JavaScript</span>
+                <!-- Project 4: InfoHive Chatbot -->
+                <div class="window-container project-card-window" data-category="fullstack">
+                    <div class="window-header">
+                        <div class="window-controls">
+                            <span class="control-dot close"></span>
+                            <span class="control-dot minimize"></span>
+                            <span class="control-dot expand"></span>
+                        </div>
+                        <div class="window-title">infohive-chatbot.exe</div>
+                    </div>
+                    <div class="window-body project-card-body" onclick="openProjectModal('chatbot')">
+                        <div class="project-img-wrapper">
+                            <img src="assets/cover_chatbot.png" alt="InfoHive chatbot cover" class="project-cover-img">
+                            <div class="project-hover-overlay">
+                                <span class="explore-btn"><i class="bx bx-search-alt-2"></i> Explore Project</span>
+                            </div>
+                        </div>
+                        <div class="project-meta-info">
+                            <h3>InfoHive College Chatbot</h3>
+                            <p class="project-excerpt">Developed a custom relational chatbot database helper that fetches student schedules, marks, dues, and course data via MySQL querying.</p>
+                            <div class="project-tech-chips">
+                                <span>PHP</span>
+                                <span>MySQL</span>
+                                <span>HTML5/CSS3</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="project-btn">
-                <a href="https://github.com/Naveena-460/decor_dreamz" target="_blank">GitHub</a>
-                   <a href="https://naveena-460.github.io/decor_dreamz/" target="_blank">Live Demo</a>
             </div>
+        </section>
 
+        <!-- Education Section -->
+        <section id="education" class="education section-container">
+            <h2 class="section-title">Educational <span class="gradient-text">Timeline</span></h2>
+            <p class="section-subtitle">My academic history and learning milestones</p>
+
+            <div class="window-container education-window">
+                <div class="window-header">
+                    <div class="window-controls">
+                        <span class="control-dot close"></span>
+                        <span class="control-dot minimize"></span>
+                        <span class="control-dot expand"></span>
+                    </div>
+                    <div class="window-title">education.dev</div>
+                </div>
+                <div class="window-body education-window-body">
+                    <div class="timeline">
+                        
+                        <!-- Education 1 -->
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-year">2022 - 2025</span>
+                                <h3>B.Sc Information Technology</h3>
+                                <p class="timeline-school">Sri Parasakthi College for Women, Courtallam</p>
+                                <span class="grade-pill"><i class="bx bx-medal"></i> CGPA: 8.40 / 10.00</span>
+                            </div>
+                        </div>
+
+                        <!-- Education 2 -->
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-year">2021 - 2022</span>
+                                <h3>HSC - Computer Science</h3>
+                                <p class="timeline-school">Tmt. Manjammal Govt. Girls Higher Secondary School, Tenkasi</p>
+                                <span class="grade-pill"><i class="bx bx-award"></i> Score: 78%</span>
+                            </div>
+                        </div>
+
+                        <!-- Education 3 -->
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-year">2019 - 2020</span>
+                                <h3>SSLC Secondary Education</h3>
+                                <p class="timeline-school">Tmt. Manjammal Govt. Girls Higher Secondary School, Tenkasi</p>
+                                <span class="grade-pill"><i class="bx bx-award"></i> Score: 87%</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section-container">
+            <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+            <p class="section-subtitle">Feel free to reach out for projects, collaborations, or work opportunities!</p>
+
+            <div class="contact-details-wrapper">
+                <div class="window-container contact-window">
+                    <div class="window-header">
+                        <div class="window-controls">
+                            <span class="control-dot close"></span>
+                            <span class="control-dot minimize"></span>
+                            <span class="control-dot expand"></span>
+                        </div>
+                        <div class="window-title">connect.sh</div>
+                        <div class="window-actions">
+                            <i class="bx bx-plug"></i>
+                        </div>
+                    </div>
+                    <div class="window-body contact-window-body">
+                        <div class="contact-info-grid">
+                            
+                            <div class="info-card">
+                                <div class="info-icon"><i class="bx bx-envelope"></i></div>
+                                <div class="info-text">
+                                    <span>Email Address</span>
+                                    <a href="mailto:naveenak460@gmail.com">naveenak460@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="info-card">
+                                <div class="info-icon"><i class="bx bx-phone"></i></div>
+                                <div class="info-text">
+                                    <span>Phone Number</span>
+                                    <a href="tel:+918637606460">+91 8637606460</a>
+                                </div>
+                            </div>
+
+                            <div class="info-card">
+                                <div class="info-icon"><i class="bx bx-map-pin"></i></div>
+                                <div class="info-text">
+                                    <span>Base Location</span>
+                                    <p>Chennai, Tamil Nadu</p>
+                                </div>
+                            </div>
+
+                            <div class="info-card">
+                                <div class="info-icon"><i class="bx bxl-github"></i></div>
+                                <div class="info-text">
+                                    <span>GitHub Repository</span>
+                                    <a href="https://github.com/Naveena-460" target="_blank">github.com/Naveena-460</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Project Details Overlay Modal (Universal) -->
+    <div class="modal-overlay" id="project-modal" onclick="closeProjectModalOnBackdrop(event)">
+        <div class="window-container modal-window">
+            <div class="window-header">
+                <div class="window-controls">
+                    <span class="control-dot close" onclick="closeProjectModal()"></span>
+                    <span class="control-dot minimize"></span>
+                    <span class="control-dot expand"></span>
+                </div>
+                <div class="window-title" id="modal-window-title">project.exe</div>
+                <button class="modal-close-btn" onclick="closeProjectModal()">&times;</button>
+            </div>
+            <div class="window-body modal-window-body">
+                <div class="modal-project-layout">
+                    <div class="modal-project-img-pane">
+                        <img src="" alt="Project Image" id="modal-project-img">
+                    </div>
+                    <div class="modal-project-details-pane">
+                        <h2 id="modal-project-name">Project Title</h2>
+                        <div class="modal-project-tech" id="modal-project-tech-tags">
+                            <!-- Populated by JS -->
+                        </div>
+                        <p class="modal-project-desc" id="modal-project-desc">Detailed Description...</p>
+                        
+                        <div class="modal-project-features">
+                            <h4>Key Features:</h4>
+                            <ul id="modal-project-features-list">
+                                <!-- Populated by JS -->
+                            </ul>
+                        </div>
+
+                        <div class="modal-project-links">
+                            <a href="" target="_blank" class="btn btn-primary modal-btn" id="modal-github-link">
+                                <i class="bx bxl-github"></i> Repository
+                            </a>
+                            <a href="" target="_blank" class="btn btn-secondary modal-btn" id="modal-live-link">
+                                <i class="bx bx-link-external"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="project-box">
-            <h3>InfoHive - College Chatbot</h3>
-
-            <p>
-                Developed a chatbot system that provides attendance, marks,
-                fees status and course information dynamically using MySQL.
-            </p>
-
-            <span>PHP | MySQL | HTML | CSS | JavaScript</span>
-
-         
-
-        </div>
-
     </div>
 
-</section>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Naveena K &bull;<span class="footer-heart"></span></p>
+    </footer>
 
-<!-- Education -->
-<section id="education">
-
-    <div class="edu-box">
-
-    <h3>B.Sc Information Technology</h3>
-    <p>Sri Parasakthi College for Women, Courtallam</p>
-    <p>CGPA : 8.40 / 10.0</p>
-    <p>2022 - 2025</p>
-
-    <br><br>
-
-    <h3>HSC - Computer Science</h3>
-    <p>Tmt. Manjammal Govt. Girls Higher Secondary School, Tenkasi</p>
-    <p>Percentage : 78%</p>
-    <p>2021 - 2022</p>
-
-    <br><br>
-
-    <h3>SSLC</h3>
-    <p>Tmt. Manjammal Govt. Girls Higher Secondary School, Tenkasi</p>
-    <p>Percentage : 87%</p>
-    <p>2019 - 2020</p>
-
-</div>
-
-</section>
-
-<!-- Contact -->
-<section id="contact">
-
-    <h2 class="heading">Contact Me</h2>
-
-    <div class="contact-box">
-
-        <p>Email : naveenak460@gmail.com</p>
-
-        <p>Phone : +91 8637606460</p>
-
-        <p>Location : Chennai, Tamil Nadu</p>
-
-       <p>Github: <a href="https://github.com/Naveena-460" target="_blank" style="color: white;">https://github.com/Naveena-460</a></p> 
-
-    </div>
-
-</section>
-
-<!-- Footer -->
-<footer>
-
-    <p>© 2026 Naveena K | All Rights Reserved</p>
-
-</footer>
-
-<script src="script.js"></script>
+    <!-- Script file -->
+    <script src="script.js"></script>
 
 </body>
 </html>
